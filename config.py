@@ -12,6 +12,9 @@ DATA_CLEANED_DIR = os.path.join(BASE_DIR, "data", "cleaned")
 RAW_FILE     = os.path.join(DATA_RAW_DIR,     "Meteorite_Landings.csv")
 CLEANED_FILE = os.path.join(DATA_CLEANED_DIR, "meteorites_clean.csv")
 DB_FILE      = os.path.join(DATA_CLEANED_DIR, "meteorites.db")
+# ── Source de données ─────────────────────────────────────────────────────────
+# On utilise le lien direct vers le CSV fourni par la NASA
+NASA_API_URL = "https://data.nasa.gov/docs/legacy/meteorite_landings/Meteorite_Landings.csv"
 
 # ── Application ───────────────────────────────────────────────────────────
 APP_TITLE = "Chutes de Météorites – Analyse Mondiale"

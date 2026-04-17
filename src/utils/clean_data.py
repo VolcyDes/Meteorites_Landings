@@ -16,7 +16,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
-
+from src.utils.get_data import fetch_raw_data
 
 def load_raw(path: str) -> pd.DataFrame:
     """Charge le CSV brut depuis le chemin fourni."""
@@ -90,7 +90,13 @@ def save_cleaned(df: pd.DataFrame, db_path: str, csv_path: str) -> None:
 
 
 def run_pipeline() -> pd.DataFrame:
-    """Lance le pipeline complet : chargement → nettoyage → double sauvegarde."""
+    """Lance le pipeline complet : téléchargement → nettoyage → double sauvegarde."""
+    
+    # 1. ÉTAPE NOUVELLE : On déclenche le téléchargement si nécessaire
+    print(" Vérification/Téléchargement des données brutes en cours...")
+    fetch_raw_data()
+    
+    # 2. Récupération des chemins
     raw_path     = config.RAW_FILE
     db_path      = config.DB_FILE
     csv_path     = config.CLEANED_FILE
@@ -104,7 +110,6 @@ def run_pipeline() -> pd.DataFrame:
     
     save_cleaned(df_clean, db_path, csv_path)
     return df_clean
-
 
 if __name__ == "__main__":
     run_pipeline()

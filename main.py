@@ -27,7 +27,7 @@ app.title = config.APP_TITLE
 app.layout = html.Div(
     style={"fontFamily": "sans-serif", "padding": "2rem"},
     children=[
-        html.H1("🌠 Chutes de Météorites – Analyse Mondiale"),
+        html.H1(" Chutes de Météorites – Analyse Mondiale"),
         html.P("Pipeline de données opérationnel. Pages en cours de construction..."),
     ],
 )
