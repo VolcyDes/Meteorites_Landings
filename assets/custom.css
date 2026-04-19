@@ -1,0 +1,12 @@
+/* ── Base ───────────────────────────────────────────────────────────────── */
+body, html {
+    background-color: #0f0f1a;
+    color: #E2E8F0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
