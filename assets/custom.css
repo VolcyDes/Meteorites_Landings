@@ -1,0 +1,181 @@
+/* ── Base ───────────────────────────────────────────────────────────────── */
+body, html {
+    background-color: #020817;
+    color: #E2E8F0;
+    font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────────────────── */
+.navbar-custom {
+    background: linear-gradient(90deg, #020817 0%, #0B1629 100%);
+    border-bottom: 1px solid #1E3A5F;
+    padding: 0 2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #F59E0B !important;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.nav-link-custom {
+    color: #94A3B8 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem !important;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+    text-decoration: none;
+}
+
+.nav-link-custom:hover {
+    color: #E2E8F0 !important;
+    background-color: #0F2040;
+}
+
+/* ── KPI Cards ──────────────────────────────────────────────────────────── */
+.kpi-card {
+    background: linear-gradient(135deg, #0B1629 0%, #0F2040 100%);
+    border: 1px solid #1E3A5F;
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.2);
+}
+
+.kpi-value {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #38BDF8;
+    line-height: 1.1;
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: #94A3B8;
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* ── Graph Cards ────────────────────────────────────────────────────────── */
+.graph-card {
+    background-color: #0B1629;
+    border: 1px solid #1E3A5F;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #38BDF8;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #1E3A5F;
+}
+
+/* ── Hero Section ───────────────────────────────────────────────────────── */
+.hero-section {
+    background: linear-gradient(180deg, #020817 0%, #0B1629 100%);
+    border-bottom: 1px solid #1E3A5F;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Halo cyan derrière le titre */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 220px;
+    background: radial-gradient(ellipse, rgba(14,165,233,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #E2E8F0;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 0.95rem;
+    color: #94A3B8;
+    max-width: 580px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* ── Page content ───────────────────────────────────────────────────────── */
+.page-content {
+    padding: 1.5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+.footer-custom {
+    background-color: #020817;
+    border-top: 1px solid #1E3A5F;
+    color: #475569;
+    font-size: 0.78rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ── Dropdown (Dash/React-Select) ───────────────────────────────────────── */
+.Select-control {
+    background-color: #0F2040 !important;
+    border: 1px solid #1E3A5F !important;
+    color: #E2E8F0 !important;
+    border-radius: 6px !important;
+}
+
+.Select-value-label, .Select-placeholder {
+    color: #E2E8F0 !important;
+}
+
+.Select-menu-outer {
+    background-color: #0B1629 !important;
+    border: 1px solid #1E3A5F !important;
+}
+
+.Select-option {
+    background-color: #0B1629 !important;
+    color: #E2E8F0 !important;
+}
+
+.Select-option:hover, .Select-option.is-focused {
+    background-color: #0F2040 !important;
+    color: #38BDF8 !important;
+}
+
+.Select-option.is-selected {
+    background-color: #0EA5E9 !important;
+    color: #020817 !important;
+}

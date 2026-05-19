@@ -1,0 +1,22 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Données nettoyées
+data/cleaned/
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
