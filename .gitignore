@@ -1,0 +1,25 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Données (le raw est committé, pas le cleaned)
+data/cleaned/
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vidéo (trop lourde pour git — stocker sur LFS si besoin)
+video.mp4
